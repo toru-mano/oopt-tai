@@ -258,6 +258,42 @@ typedef enum _tai_network_interface_attr_t
     TAI_NETWORK_INTERFACE_ATTR_MODULATION_FORMAT,
 
     /**
+     * @brief The baud rate in Hz
+     *
+     * @type #tai_int64_t
+     * @flags READ_ONLY
+     * @default vendor-specific
+     */
+    TAI_NETWORK_INTERFACE_ATTR_BAUD_RATE,
+
+    /**
+     * @brief The FEC net coding gain in dB
+     *
+     * @type #tai_float_t
+     * @flags READ_ONLY
+     * @default vendor-specific
+     */
+    TAI_NETWORK_INTERFACE_ATTR_FEC_NET_CODING_GAIN,
+
+    /**
+     * @brief The receiver OSNR tolerance in dB (0.1 nm, 193.6 THz)
+     *
+     * @type #tai_float_t
+     * @flags READ_ONLY
+     * @default vendor-specific
+     */
+    TAI_NETWORK_INTERFACE_ATTR_RX_OSNR_TOLERANCE,
+
+    /**
+     * @brief The minimum transmitter OSNR in dB (0.1 nm, 193.6 THz)
+     *
+     * @type #tai_float_t
+     * @flags READ_ONLY
+     * @default vendor-specific
+     */
+    TAI_NETWORK_INTERFACE_ATTR_MIN_TX_OSNR,
+
+    /**
      * @brief The current pre-FEC bit error rate
      *
      * @type #tai_float_t
